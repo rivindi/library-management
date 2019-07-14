@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        body{
+            //background-image: url(how.jpg);
+            background-size: cover;
+        }
+        .persnl{
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: rgba(221, 214, 109, 0.678);
+            border: 10px solid green;
+            padding: 40px;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .contct{
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: rgba(208, 228, 121, 0.74);
+            border: 10px solid green;
+            padding: 40px;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .reg{
+            
+           margin-left: 200px;
+           height: 10px;
+           width: 15px;
+        }
+        .reset{
+            margin-left: 81%;
+            margin-top: -18px;
+        }
+        .regfee{
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: rgba(208, 228, 121, 0.74);
+            border: 10px solid green;
+            padding: 40px;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+	<h1> 
+        <strong> 
+            MEMBER REGISTRATION FORM 
+        </strong>
+    </h1>
+        <div class="form">
+            <div class="persnl">
+                <!-- <fieldset> -->
+                    <legend>
+                        <Strong>
+                            <h1> 
+                                 Personal Information 
+                            </h1> 
+                        </strong> 
+                    </legend>
+
+                        <form>
+                            <label>
+                                Name:<br/><input type="text" name="fname" placeholder="first name" required /> <br/>
+                            </label>
+                        
+                            <label>
+                                Date of Birth:<br/><input type="text" name="dob" placeholder="mm/dd/yyyy"/> <br/>
+                            </label>
+                        
+                            <label>
+                                NIC number:<br/><input type="text" name="NIC"/> <br/>
+                            </label>
+                        
+                            <label>
+                                Gender:<br/>
+                                <input type="radio" name="sex" value="male">Male <br/>
+                                <input type="radio" name="sex" value="female">Female <br/>
+                            </label>
+                        
+                            <label>
+                                Uploard your certified Identiticard Printout(certify by JP):<br/><input type="file" name="image" accept="image/*"> <br/>
+                            </label>
+
+                        </form>
+                <!-- </fieldset> -->
+            </div>
+    <br/>
+    <br/>
+            <div class="contct">
+                    <fieldset>
+
+                        <legend>
+                            <Strong> 
+                                <h1>
+                                    Contact Information 
+                                </h1> 
+                            </strong> 
+                        </legend>
+                            <form>
+                                <label>
+                                    Permenent Address:<br/><input type="text" name="address" placeholder="personal address" required /> <br/>
+                                </label>
+
+                                <label>
+                                    Telephone:<br/><input type="tel" name="phone" required /> <br/>
+                                </label>
+                                
+                                <label>
+                                    Mobile:<br/><input type="tel" name="mobile" placeholder="mobile number" required /> <br/>
+                                </label>
+                            
+                                <label>
+                                    E-mail:<br/><input type="email" name="mail" placeholder="your E-mail" /> <br/>
+                                </label>
+
+                                <label>
+                                    Non-related referies:<br/><input type="text" name="ref1" placeholder="Referer one" /> 
+                                    <input type="text" name="ref2" placeholder="Referer two" />
+                                </label>
+                            </form>
+                    </fieldset>
+            </div>
+            <br/>
+            <br/>
+            <div class="regfee">
+                <fieldset>
+                    <legend>
+                        <strong>
+                            <h1>
+                                Registration fee
+                            </h1>
+                        </strong>
+                    </legend>
+                    <form>
+                            <label>
+                                Payment Recipt Number: <br/><input type="text" name="recipt" placeholder="Recipt number" />
+                            </label>
+                    </form>
+                    
+                </fieldset>
+            </div>
+    <br/>
+    <br/>
+    <div class="reg">
+            <button> Register </button> 
+    </div>
+
+    <div class="reset">
+        <input type="reset" name="reset" />
+    </div>
+
+
+
+    <br/>
+    <br/>
+        
+    <p> <button> <a href="staff.html"> click here to go back </button> </a></p> 
+    <p>&copy KAUSHINI EKANAYAKE(BSc in Information Technology)</p>
+</body>
+
+</html>

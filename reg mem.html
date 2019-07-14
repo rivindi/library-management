@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>regmem</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+        /* body
+        {
+           h1{
+               text-emphasis: none;
+
+           }
+        }  */
+
+        .form{
+            margin-left: 300px;
+            padding-left: 10px;
+            border: 5px solid cadetblue;
+            border-radius: 20px;
+            padding-bottom: 30px;
+            margin-right: 400px;
+        }
+
+        .button{
+            margin-left: 80%;
+        }
+    </style>
+</head>
+<body>
+    <!-- heading of the form -->
+    <h1> 
+        <strong> 
+            Member Registration Form
+        </strong>
+    </h1>
+    <!-- form fields -->
+    <div class="form">
+        <form> <br>
+            <label>
+               First Name :- <input type="text" name="fname" placeholder="First name" required > <br>
+            </label>
+            <br>
+            <label>
+                Last Name:-<input type="text" name="lname" placeholder="Last name" required /> <br/>
+            </label>
+            <br>
+            <label>
+                Date of Birth:-<input type="text" name="dob" placeholder="mm/dd/yyyy"/> <br/>
+            </label>
+            <br>
+            <label>
+                NIC number:-<input type="text" name="NIC"/> <br/>
+            </label>
+            <br>
+            <label>
+                Gender:-<br/>
+                <input type="radio" name="sex" value="male">Male <br/>
+                <input type="radio" name="sex" value="female">Female <br/>
+            </label>
+            <br>
+            <label>
+                Uploard your certified Identiticard Printout(certify by JP):-<br/><input type="file" name="image" accept="image/*"> <br/>
+            </label>
+            <br>
+            <label>
+                Uploard your image:-<br/><input type="file" name="image" accept="image/*"> <br/>
+            </label>
+            <br>
+            <label>
+                Permenent Address:-<br> <textarea name="text" id="text" cols="20" rows="5"></textarea> <br/> <br/>
+            </label>
+            <br>
+            <label>
+                If you are not a permonent residence in here, Your postal address:-<br>
+                <textarea name="text" id="text" cols="20" rows="5"></textarea> <br/>
+            </label>
+            <br>
+            <label>
+                Telephone:-<input type="tel" name="phone" required /> <br>
+            </label>
+            <br>   
+            <label>
+                Mobile:-<input type="tel" name="mobile" placeholder="mobile number" required /> <br/>
+            </label>
+            <br>
+            <label>
+                E-mail:-<input type="email" name="mail" placeholder="your E-mail" /> <br/>
+            </label>
+            <br>
+            <label>
+                Designation:-<input type="text" name="address" placeholder="profession/undergraduates/" required /> <br/>
+            </label>
+            <br>
+            <label>
+                Non-related referies:<br/> <textarea name="text" id="" cols="20" rows="5"></textarea> 
+                <textarea name="text" id="" cols="20" rows="5"></textarea> <br>
+            </label>
+            <br>
+            <label>
+                Payment Recipt Number: <br/><input type="text" name="recipt" placeholder="Recipt number" />
+            </label>
+            <br>
+            
+            <div class="button">
+                    <div class="reg">
+                    <button class="btn btn-info">Register</button>
+    
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
