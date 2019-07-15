@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Logging page
+    </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+            /* background-image: url(bookstack.jpg); */
+            background-size: 25%;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+
+        .field {
+
+            margin-top: 25%;
+            /* background-color: rgba(250, 228, 199, 0.877); */
+            font: italic;
+        }
+
+        .log {
+            border: 15px solid rgb(0, 128, 0);
+            border-radius: 5px;
+            padding: 50px;
+            margin: 20px;
+            background-color: rgba(127, 255, 212, 0.603);
+
+        }
+
+        .sub {
+            margin-top: -10px;
+            margin-left: 90%;
+
+        }
+
+        .reg {
+            height: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <fieldset>
+            <legend>
+                <strong>
+                    <h1>
+                        Login
+                    </h1>
+                </strong>
+            </legend>
+
+            <div class="log">
+                <form>
+                    <label>
+                        User Name: <input id="login" class="fadeIn second" type="text" name="fname"
+                            placeholder="User name" required /> <br />
+                    </label>
+                    <br />
+                    <label>
+                        Password :&nbsp;&nbsp; <input id="login" class="fadeIn second" type="password" name="pw"
+                            placeholder="********" required /> <br />
+                    </label>
+
+                    <form>
+            </div>
+            <div class="button">
+                <div class="reg">
+                    <!-- <button class="btn btn-info">Register</button> -->
+
+                </div>
+
+                <div class="sub">
+                    <input type="submit" name="login" class="btn btn-info" />
+                </div>
+            </div>
+
+            
+        </fieldset>
+    </div>
+
+
+</body>
+
+</html>
