@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
     <style>
         table {
           font-family: arial, sans-serif;
@@ -22,13 +27,28 @@
         tr:nth-child(even) {
           background-color: #dddddd;
         }
+
+        .head{
+          text-align: center;
+        }
         </style>
 
 </head>
 <body>
-    <h1>
-        <strong>Manage Member Details</strong>
-    </h1>
+  <div class="head">
+      <h1>
+          <strong>Manage Member Details</strong>
+      </h1>  
+  </div>
+    
+    <div style="float: right; padding: 0 10px;"> 
+        <form class="navbar-form navbar-left" action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search member by name">
+          </div>
+          <button type="submit" class="btn btn-info">Search</button>
+        </form>
+    </div>
     
     <table>
       <tr>
@@ -46,85 +66,108 @@
         
       </tr>
       <tr>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td> <button> Update </button> </td>
-        <td> <button> Delete </button> </td>
+        <td>M0001</td>
+        <td>Rivindi Ekanayake</td>
+        <td>976131061V</td>
+        <td>Female</td>
+        <td>22/04/1997</td>
+        <td>Bangalawatta,Kekanadura,Matara</td>
+        <td>0715698742</td>
+        <td>Undergraduates</td>
+        <td>N-Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
 
       </tr>
       <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td> <button> Update </button> </td>
-        <td> <button> Delete </button> </td>
+        <td>M0002</td>
+        <td>Rashmika Munasinghe </td>
+        <td>976510214V</td>
+        <td>Male</td>
+        <td>06/03/1997</td>
+        <td>35/A,Lebima,Matara</td>
+        <td>07125647891</td>
+        <td>Software Engineer</td>
+        <td>VIP Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
       </tr>
       <tr>
-        <td>Ernst Handel</td>
-        <td>Roland Mendel</td>
-        <td>Austria</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td> <button> Update </button> </td>
-        <td> <button> Delete </button> </td>
+        <td>M0003</td>
+        <td>Malsha Dias</td>
+        <td>976521487V</td>
+        <td>Female</td>
+        <td>16/09/1997</td>
+        <td>7/B/1,Kekanadura,Matara</td>
+        <td>0713569847</td>
+        <td>Undergraduates</td>
+        <td>N-Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
       </tr>
       <tr>
-        <td>Island Trading</td>
-        <td>Helen Bennett</td>
-        <td>UK</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td> <button> Update </button> </td>
-        <td> <button> Delete </button> </td>
+        <td>M0004</td>
+        <td>Pamodi Madurapperuma</td>
+        <td>97658424V</td>
+        <td>Female</td>
+        <td>03/09/1997</td>
+        <td>cinnomon Garden,Thalpawila,Matara</td>
+        <td>071548795</td>
+        <td>Undergraduates</td>
+        <td>N-Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
       </tr>
       <tr>
-        <td>Laughing Bacchus Winecellars</td>
-        <td>Yoshi Tannamuri</td>
-        <td>Canada</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td> <button> Update </button> </td>
-        <td> <button> Delete </button> </td>
+        <td>M0005</td>
+        <td>Asangi Punchihewa</td>
+        <td>971254687V</td>
+        <td>Female</td>
+        <td>07/12/1997</td>
+        <td>97/A,Kumbalgama,Matara</td>
+        <td>071548795</td>
+        <td>Undergraduates</td>
+        <td>N-Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
       </tr>
       <tr>
-        <td>Magazzini Alimentari Riuniti</td>
-        <td>Giovanni Rovelli</td>
-        <td>Italy</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td>Germany</td>
-        <td> <button> Update </button> </td>
-        <td> <button> Delete </button> </td>
+        <td>M0006</td>
+        <td>Geeth Disanayake</td>
+        <td>97325487V</td>
+        <td>Male</td>
+        <td>05/07/1997</td>
+        <td>7/A/C,Thalpawila,Matara</td>
+        <td>071548795</td>
+        <td>Software Developper</td>
+        <td>VIP-Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
       </tr>
+      <tr>
+          <td>M0007</td>
+          <td>Nipun Hettiarachchi</td>
+          <td>96215487V</td>
+          <td>Male</td>
+          <td>08/08/1996</td>
+          <td>2/a,Walpala,Matara</td>
+          <td>071598472</td>
+          <td>QS Engineer</td>
+          <td>VIP_Member</td>
+          <td> <button class="btn btn-success"> Update </button> </td>
+          <td> <button class="btn btn-danger"> Delete </button> </td>
+        </tr>
+
     </table>
     
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 </html>
