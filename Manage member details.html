@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+
+        /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  margin-left: 25px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(10, 161, 98);
+  color: white;
+}
+
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+
+        .head{
+          text-align: center;
+        }
+
+        .btn-add{
+          border-radius: 30px;
+          width: 50px;
+          height: 50px;
+          font-size: 25px;
+        }
+
+        body{
+          padding: 20px;
+        }
+
+        .add-button {
+          margin-bottom: -30px;
+        }
+
+        </style>
+
+</head>
+<body>
+
+    <div class="topnav" >
+        <a class="active" href="#home">Manage Member</a>
+        <a  href="#news">Manage Books</a>
+        <a href="#contact">Lending Books</a>
+        <a href="#about">Acceptance of Books</a>
+        <a href="#about">Reserve Books</a>
+        <a href="#about">Fine payment</a>
+    </div>
+
+  <div class="head">
+      <h1>
+          <strong>Manage Member Details</strong>
+      </h1>  
+  </div>
+
+  <div class="add-button">
+    <button class="btn btn-add btn-info"> 
+      +
+    </button>
+  </div>
+    
+    <div style="float: right; padding: 0 10px;"> 
+        <form class="navbar-form navbar-left" action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search member by name">
+          </div>
+          <button type="submit" class="btn btn-info">Search</button>
+        </form>
+    </div>
+    
+    <table>
+      <tr>
+        <th>Member Id</th>
+        <th>Full Name</th>
+        <th>NIC Number</th>
+        <th>Gender</th>
+        <th>Date Of Birth</th>
+        <th>Postal Address</th>
+        <th>Mobile No</th>
+        <th>Designation</th>
+        <th>Member type</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        
+      </tr>
+      <tr>
+        <td>M0001</td>
+        <td>Rivindi Ekanayake</td>
+        <td>976131061V</td>
+        <td>Female</td>
+        <td>22/04/1997</td>
+        <td>Bangalawatta,Kekanadura,Matara</td>
+        <td>0715698742</td>
+        <td>Undergraduates</td>
+        <td>N-Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
+
+      </tr>
+      <tr>
+        <td>M0002</td>
+        <td>Rashmika Munasinghe </td>
+        <td>976510214V</td>
+        <td>Male</td>
+        <td>06/03/1997</td>
+        <td>35/A,Lebima,Matara</td>
+        <td>07125647891</td>
+        <td>Software Engineer</td>
+        <td>VIP Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
+      </tr>
+      <tr>
+        <td>M0003</td>
+        <td>Malsha Dias</td>
+        <td>976521487V</td>
+        <td>Female</td>
+        <td>16/09/1997</td>
+        <td>7/B/1,Kekanadura,Matara</td>
+        <td>0713569847</td>
+        <td>Undergraduates</td>
+        <td>N-Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
+      </tr>
+      <tr>
+        <td>M0004</td>
+        <td>Pamodi Madurapperuma</td>
+        <td>97658424V</td>
+        <td>Female</td>
+        <td>03/09/1997</td>
+        <td>cinnomon Garden,Thalpawila,Matara</td>
+        <td>071548795</td>
+        <td>Undergraduates</td>
+        <td>N-Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
+      </tr>
+      <tr>
+        <td>M0005</td>
+        <td>Asangi Punchihewa</td>
+        <td>971254687V</td>
+        <td>Female</td>
+        <td>07/12/1997</td>
+        <td>97/A,Kumbalgama,Matara</td>
+        <td>071548795</td>
+        <td>Undergraduates</td>
+        <td>N-Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
+      </tr>
+      <tr>
+        <td>M0006</td>
+        <td>Geeth Disanayake</td>
+        <td>97325487V</td>
+        <td>Male</td>
+        <td>05/07/1997</td>
+        <td>7/A/C,Thalpawila,Matara</td>
+        <td>071548795</td>
+        <td>Software Developper</td>
+        <td>VIP-Member</td>
+        <td> <button class="btn btn-success"> Update </button> </td>
+        <td> <button class="btn btn-danger"> Delete </button> </td>
+      </tr>
+
+    </table>
+
+    <div style="float: right; margin-right: 20px">
+
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+
+    </div>
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</html>
