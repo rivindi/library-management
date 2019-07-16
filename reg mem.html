@@ -11,35 +11,37 @@
 
 
     <style>
-        /* body
-        {
-           h1{
-               text-emphasis: none;
-
-           }
-        }  */
 
         .form{
-            margin-left: 300px;
+            margin-left: 200px;
             padding-left: 10px;
             border: 5px solid cadetblue;
             border-radius: 20px;
             padding-bottom: 30px;
-            margin-right: 400px;
+            margin-right: 200px;
         }
 
         .button{
-            margin-left: 80%;
+            margin-left: 85%;
         }
+        body{
+            padding: 20px;
+        }
+
+    .head{
+        text-align: center;
+    }
     </style>
 </head>
 <body>
     <!-- heading of the form -->
-    <h1> 
-        <strong> 
-            Member Registration Form
-        </strong>
-    </h1>
+    <div class="head">
+            <h1> 
+                    <strong> 
+                        Member Registration Form
+                    </strong>
+            </h1>
+    </div>
     <!-- form fields -->
     <div class="form">
         <form> <br>
@@ -74,12 +76,12 @@
             </label>
             <br>
             <label>
-                Permenent Address:-<br> <textarea name="text" id="text" cols="20" rows="5"></textarea> <br/> <br/>
+                Permenent Address:-<br> <textarea name="text" id="text" cols="100" rows="5"></textarea> <br/> <br/>
             </label>
             <br>
             <label>
                 If you are not a permonent residence in here, Your postal address:-<br>
-                <textarea name="text" id="text" cols="20" rows="5"></textarea> <br/>
+                <textarea name="text" id="text" cols="100" rows="5"></textarea> <br/>
             </label>
             <br>
             <label>
@@ -99,8 +101,8 @@
             </label>
             <br>
             <label>
-                Non-related referies:<br/> <textarea name="text" id="" cols="20" rows="5"></textarea> 
-                <textarea name="text" id="" cols="20" rows="5"></textarea> <br>
+                Non-related referies:<br/> <textarea name="text" id="" cols="50" rows="5"></textarea> 
+                <textarea name="text" id="" cols="50" rows="5"></textarea> <br>
             </label>
             <br>
             <label>
@@ -110,7 +112,7 @@
             
             <div class="button">
                     <div class="reg">
-                    <button class="btn btn-info">Register</button>
+                    <button class="btn btn-success">Register</button>
     
             </div>
         </form>
