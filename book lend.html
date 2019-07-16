@@ -8,9 +8,43 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
 
     <style>
+
+                  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  margin-left: 25px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(10, 161, 98);
+  color: white;
+}
+
         /* body
         {
            h1{
@@ -20,29 +54,56 @@
         }  */
 
         .form{
-            margin-left: 300px;
+            margin-left: 200px;
             padding-left: 10px;
             border: 5px solid cadetblue;
             border-radius: 20px;
             padding-bottom: 30px;
-            margin-right: 400px;
+            margin-right: 300px;
         }
 
         .button{
-            margin-left: 80%;
+            margin-left: 670px;
+            margin-bottom:-10px;
+        }
+
+        .head{
+            text-align: center;
+        }
+
+        body{
+            padding: 20px;
         }
     </style>
 </head>
 <body>
+
+        <div class="topnav" >
+                <a  href="#home">Manage Member</a>
+                <a href="#news">Manage Books</a>
+                <a class="active"  href="#contact">Lending Books</a>
+                <a href="#about">Acceptance of Books</a>
+                <a href="#about">Reserve Books</a>
+                <a href="#about">Fine payment</a>
+            </div>
+        
+
     <!-- heading of the form -->
-    <h1> 
-        <strong> 
-            Book Lending Form
-        </strong>
-    </h1>
+    <div class="head">
+            <h1> 
+                    <strong> 
+                        Book Lending Form
+                    </strong>
+                </h1>
+    </div>
+    
     <!-- form fields -->
     <div class="form">
         <form> <br>
+            <lable>
+                Book Details
+            </lable>
+            <br>
             <label>
                Book Name :- <input type="text" name="fname" placeholder="Book name" required > <br>
             </label>
@@ -55,6 +116,11 @@
                 ISBN Number:-<input type="text" name="dob" placeholder="************"/> <br/>
             </label>
             <br>
+            <p> </p>
+            <lable>
+                Member details
+            </lable><br>
+
             <label>
                 Member Id:-<input type="text" name="NIC"/> <br/>
             </label>
@@ -65,60 +131,41 @@
             <br>
             <label>
                 Membership type:-<br/>
-                <input type="radio" name="mem1" value="vip">VIP Membership <br/>
-                <input type="radio" name="mem2" value="nrml">Normal Membership <br/>
-                <!-- <input type="radio" name="sex" value="male">Male <br/> -->
-            </label>
+                <input type="radio" name="memtype" value="VIP-Member" checked> VIP-Member<br>
+                <input type="radio" name="memtype" value="N-Member"> N-Member<br>
             <br>
             <label>
-                Membership type:-<br/>
-                <input type="radio" name="mem1" value="vip">VIP Membership <br/>
-                <input type="radio" name="mem2" value="nrml">Normal Membership <br/>
-                <!-- <input type="radio" name="sex" value="male">Male <br/> -->
+                Email:-<input type="email" name="email"/> <br/>
             </label>
             <br>
-            <label>
-                Permenent Address:-<br> <textarea name="text" id="text" cols="20" rows="5"></textarea> <br/> <br/>
-            </label>
-            <br>
-            <label>
-                If you are not a permonent residence in here, Your postal address:-<br>
-                <textarea name="text" id="text" cols="20" rows="5"></textarea> <br/>
-            </label>
-            <br>
-            <label>
-                Telephone:-<input type="tel" name="phone" required /> <br>
-            </label>
-            <br>   
             <label>
                 Mobile:-<input type="tel" name="mobile" placeholder="mobile number" required /> <br/>
             </label>
             <br>
             <label>
-                E-mail:-<input type="email" name="mail" placeholder="your E-mail" /> <br/>
+                Book Lending date:- <input type="date" name="lend-date" required/>
             </label>
             <br>
             <label>
-                Designation:-<input type="text" name="address" placeholder="profession/undergraduates/" required /> <br/>
+                Date to return:- <input type="date" name="return-date" required/>
             </label>
             <br>
-            <label>
-                Non-related referies:<br/> <textarea name="text" id="" cols="20" rows="5"></textarea> 
-                <textarea name="text" id="" cols="20" rows="5"></textarea> <br>
-            </label>
-            <br>
-            <label>
-                Payment Recipt Number: <br/><input type="text" name="recipt" placeholder="Recipt number" />
-            </label>
-            <br>
-            
             <div class="button">
                     <div class="reg">
-                    <button class="btn btn-info">Register</button>
+                    <button class="btn btn-success">Submit</button>
     
             </div>
         </form>
     </div>
     
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 </html>
