@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>mem-manage</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
     /* Add a black background color to the top navigation */
     .topnav {
@@ -79,7 +79,50 @@
 </head>
 
 <body>
-  <div class="topnav">
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Member Management</a>
+      </div>
+      <ul class="nav navbar-nav">
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Manage Member <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Add Member</a></li>
+            <li><a href="#">Edit Member Details</a></li>
+            <li><a href="#">Remove Member</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Manage Book <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Add Book Recode</a></li>
+            <li><a href="#">Edit Book Recode</a></li>
+            <li><a href="#">Remove Book Recode</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <div style="float: right; padding: 0 10px;"> 
+          <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search book by name">
+            </div>
+            <button type="submit" class="btn btn-info">Search</button>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h3>Navbar With Dropdown</h3>
+    <p>This example adds a dropdown menu for the "Page 1" button in the navigation bar.</p>
+  </div>
+
+  <!-- <div class="topnav">
     <a class="active" href="#home">Manage Member</a>
     <a href="#news">Manage Books</a>
     <a href="#contact">Manage Libary Activities</a>
@@ -91,19 +134,19 @@
 
 
   <div class="botnav">
-    <a class="active" href="#home">Add Member
-      <!-- <ul>
+    <a class="active" href="#home">Add Member -->
+  <!-- <ul>
                         <li><a href="default.asp">Home</a></li>
                         <li><a href="news.asp">News</a></li>
                         <li><a href="contact.asp">Contact</a></li>
                         <li><a href="about.asp">About</a></li>
                       </ul> -->
-    </a>
+  <!-- </a>
     <a href="#news">Edit Member Details</a>
     <a href="#contact">Delete Member</a>
     <a href="#contact">Search Member</a>
 
-  </div>
+  </div> -->
 
 
 </body>
