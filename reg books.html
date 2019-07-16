@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>book-lend</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+
+    <style>
+
+                  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  margin-left: 25px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(10, 161, 98);
+  color: white;
+}
+
+        /* body
+        {
+           h1{
+               text-emphasis: none;
+
+           }
+        }  */
+
+        .form{
+            margin-left: 200px;
+            padding-left: 10px;
+            border: 5px solid cadetblue;
+            border-radius: 20px;
+            padding-bottom: 30px;
+            margin-right: 300px;
+        }
+
+        .button{
+            margin-left: 670px;
+            margin-bottom:-10px;
+        }
+
+        .head{
+            text-align: center;
+        }
+
+        body{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="topnav" >
+                <a  href="#home">Manage Member</a>
+                <a href="#news">Manage Books</a>
+                <a class="active"  href="#contact">Lending Books</a>
+                <a href="#about">Acceptance of Books</a>
+                <a href="#about">Reserve Books</a>
+                <a href="#about">Fine payment</a>
+            </div>
+        
+
+    <!-- heading of the form -->
+    <div class="head">
+            <h1> 
+                    <strong> 
+                        Adding Books To Store
+                    </strong>
+                </h1>
+    </div>
+    
+    <!-- form fields -->
+    <div class="form">
+        <form> <br>
+            <label>
+                Book ID:-<input type="text" name="ctgry"/> <br/>
+            </label>
+            <br>
+            <label>
+               Book Name :- <input type="text" name="fname" placeholder="Book name" required > <br>
+            </label>
+            <br>
+            <label>
+                Author Name:-<input type="text" name="lname" placeholder="Author Name" required /> <br/>
+            </label>
+            <br>
+            <label>
+                ISBN Number:-<input type="text" name="dob" placeholder="************"/> <br/>
+            </label>
+            <br>
+            <label>
+                Edition:-<input type="text" name="NIC"/> <br/>
+            </label>
+            <br>
+            <label>
+                Publisher:-<input type="text" name="NIC"/> <br/>
+            </label>
+            <br>
+            <label>
+                Book type:-<br/>
+                <input type="radio" name="memtype" value="VIP-Member" checked> Reference Only<br>
+                <input type="radio" name="memtype" value="N-Member"> Can lend<br>
+            <br>
+            <label>
+                Category:-<input type="text" name="ctgry"/> <br/>
+            </label>
+            <br>
+
+            <br>
+            <div class="button">
+                    <div class="reg">
+                    <button class="btn btn-success">Save</button>
+    
+            </div>
+        </form>
+    </div>
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</html>
